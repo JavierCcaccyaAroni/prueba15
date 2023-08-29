@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularios</title>
+</head>
+<body>
+  
+  <h1>Formulario</h1>
+  
+  <form action="" method="post">
+    
+    <p>
+      Nombres y apellidos
+      <input type="text" id="nombres" placeholder="Ej. Juan Perez" required>
+    </p>
+  
+    <p>
+      Correo electronico
+      <input type="email" id="correo">
+    </p>
+  
+    <p>
+      Contraseña
+      <input type="password" name="" id="contrasena">
+    </p>
+  
+    <h2>Estado civil</h2>
+    <input type="radio" id="casado" name="estadocivil" value="casado">
+    <label for="casado">Casado</label>
+    <input type="radio" id="conviviente" name="estadocivil" value="conviviente">
+    <label for="conviviente">Conviviente</label>
+    <input type="radio" id="soltero" name="estadocivil" value="soltero">
+    <label for="soltero">soltero</label>
+    
+    <h2>Ciudades del Perú</h2>
+    <select>
+      <option selected disabled>Seleccione una opción</option>
+      <option value="LIM">Lima</option>
+      <option value="ARE">Arequipa</option>
+      <option value="TRU">Trujillo</option>
+      <option value="LORE">Loreto</option>
+      <option value="PIU">Piura</option>
+    </select>
+
+    <h2>Cursos</h2>
+    <p>JavaScript
+      <input type="checkbox" name="curso_1">
+    </p>
+    <p>HTML
+      <input type="checkbox" name="curso_2">
+    </p>
+    <p>CSS
+      <input type="checkbox" name="curso_3">
+    </p>
+    <p>React JS
+      <input type="checkbox" name="curso_4">
+    </p>
+    <p>Next Js
+      <input type="checkbox" name="curso_5">
+    </p>
+
+
+    <input type="submit" value="Enviar">
+    <button type="button"></button>
+    </form>
+  </main>
+</body>
+</html>

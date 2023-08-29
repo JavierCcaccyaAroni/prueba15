@@ -1,0 +1,25 @@
+/*body {
+    background-color: red;
+}*/
+/* Selectores */
+h1 {
+    color: blue;
+}
+
+.selector-clase {
+    color: red;
+}
+
+#selector-id {
+    color: yellowgreen;
+}
+
+/* Pseudo Clases */
+button {
+    background-color: red;
+    padding: 10px;
+    border-radius: 20px;
+}
+button:hover {
+    background-color: green;
+}

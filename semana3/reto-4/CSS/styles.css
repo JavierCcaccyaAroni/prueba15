@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 18px;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Fraunces', serif;
+    color: hsl(167, 40%, 24%);
+}
+
+/* definiendo flex */
+.flex {
+    display: flex;
+}
+
+.contenedor {
+    width: 1440px;
+    margin: auto;
+    flex-direction: column;
+}
+
+.encabezado {
+    height: 100vh;
+    background-image: url(../images/image-header.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+
+    flex-direction: column;
+    gap: 100px;
+}
+.nav {
+    margin: 40px 60px;
+    justify-content: space-between;
+}
+
+.menu {
+    font-family: 'Barlow', sans-serif;
+    gap: 30px;
+}
+.menu a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    padding: 15px 15px;
+    cursor: pointer;
+}
+
+.menu a:hover {
+    text-decoration: none;
+    color: hsl(167, 40%, 24%);
+    background-color: #fff;
+    padding: 15px 15px;
+    border-radius: 35px;
+}
+.active {
+    text-decoration: none;
+    color: hsl(167, 40%, 24%);
+    background-color: #fff;
+    padding: 15px 15px;
+    border-radius: 35px;
+}
+
+.titulo {
+    margin: -25px auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 75px;
+    
+}
+
+.subtitulo {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 900;
+    color: hsl(0, 0%, 100%);
+}
+
+.descripcion1 {
+    flex: 50%;
+    /* border: solid; */
+}
+.descripcion2 {
+    flex: 50%;
+}
+.centrar {
+    width: 73%;
+    height: 75vh;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+.centrar h2 {
+    font-size: 60px;
+    font-weight: 900;
+}
+.centrar p {
+    color: hsl(210, 4%, 67%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 30px;
+}
+.centrar > div > a {
+    padding-left: 0;
+    text-transform: uppercase;
+    color: hsl(167, 40%, 24%);
+}
+
+/* --- otra sección  ----*/
+.diseno {
+    display: flex;
+}
+.detalle-diseno {
+    flex: 50%;
+    padding: 20px;
+    height: 75vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-start;
+    justify-content: end;
+    gap: 30px;
+}
+.detalle-diseno > p {
+    width: 65%;
+    text-align: center;
+    margin-bottom: 20px;
+    color: hsl(213, 9%, 39%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 30px;
+    letter-spacing: -1px;
+}
+/* -- otra sección --*/
+.container-testimonios {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.titulo-test {
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: hsl(232, 10%, 55%);
+}
+.testimonios {
+    display: flex;
+    justify-content: space-around;
+
+}
+.test-person {
+    width: 30%;
+    height: 50vh;
+    text-align: center;
+    margin: 0 30px;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.parrf {
+    font-size: 16px;
+    color: hsl(213, 9%, 39%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 30px;
+    padding: 40px 25px;
+}
+.profesion {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: hsl(232, 10%, 55%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.test-person > img {
+    width: 60px;
+    border-radius: 30px;
+}
+/* -- Otra sección-- */
+.galery {
+    width: 100%;
+    display: flex;
+}
+.galery > div {
+    width: 25%;
+}
+
+/*-- Footer --*/
+footer {
+    background-color: hsl(210, 4%, 67%);
+    height: 40vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer1 > img {
+    width: 10em;
+    margin: 30px;
+}
+.footer2 {
+    margin-bottom: 50px;
+}
+.footer2 a {
+    margin: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    color: hsl(168, 34%, 41%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.footer3 > img {
+    margin: 10px;
+}
